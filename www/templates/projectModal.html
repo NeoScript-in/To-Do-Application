@@ -1,0 +1,14 @@
+<ion-header-bar>
+	<h1 class="title">New Project</h1>
+	<button class="button button-clear button-positive" ng-click="closeProject()">Cancel</button>
+</ion-header-bar>
+<ion-content>
+        <div class="list">
+             <label class="item item-input">
+                 <input type="text" placeholder="Project Name" ng-model="newProject.title">
+              </label>
+        </div>
+        <div class="padding">
+              <button class="button button-block button-positive" ng-click="createProject()">Create Project</button>
+        </div>
+</ion-content>

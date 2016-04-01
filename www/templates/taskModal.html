@@ -1,0 +1,14 @@
+<ion-header-bar>
+	<h1 class="title">New Task</h1>
+	<button class="button button-clear button-positive" ng-click="closeTask()">Cancel</button>
+</ion-header-bar>
+<ion-content>
+        <div class="list">
+             <label class="item item-input">
+                 <input type="text" placeholder="Project Name" ng-model="newTask.title">
+              </label>
+        </div>
+        <div class="padding">
+              <button class="button button-block button-positive" ng-click="createTask()">Create Task</button>
+        </div>
+</ion-content>
