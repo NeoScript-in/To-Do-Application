@@ -5,8 +5,11 @@ angular.module('starter.controllers', [])
     $scope.projects = storage.getAllProjects();
     $scope.newProject = {};
     $scope.activeProject = storage.getActiveProject();
-    $scope.tasks = $scope.activeProject.tasks;
-    
+    if($scope.activeProject){
+        $scope.tasks = $scope.activeProject.tasks;
+    }else{
+        $scope.tasks = [];
+    }
     
     $ionicModal.fromTemplateUrl('../templates/projectModal.html',{
             scope:$scope,
